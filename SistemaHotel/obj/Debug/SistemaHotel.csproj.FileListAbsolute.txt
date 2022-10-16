@@ -1,0 +1,12 @@
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.exe.config
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.exe
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\bin\Debug\SistemaHotel.pdb
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.AssemblyReference.cache
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.SuggestedBindingRedirects.cache
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.frmLogin.resources
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Properties.Resources.resources
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.GenerateResource.cache
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.csproj.CoreCompileInputs.cache
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.exe
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.pdb
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.FrmMenu.resources
