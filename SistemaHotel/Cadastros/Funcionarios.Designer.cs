@@ -60,14 +60,13 @@
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtBuscarNome
             // 
             this.txtBuscarNome.Location = new System.Drawing.Point(511, 37);
             this.txtBuscarNome.Name = "txtBuscarNome";
             this.txtBuscarNome.Size = new System.Drawing.Size(141, 20);
-            this.txtBuscarNome.TabIndex = 50;
+            this.txtBuscarNome.TabIndex = 0;
             // 
             // txtNome
             // 
@@ -75,7 +74,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(127, 20);
             this.txtNome.TabIndex = 1;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label2
             // 
@@ -108,7 +106,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(511, 140);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(141, 20);
-            this.txtEndereco.TabIndex = 55;
+            this.txtEndereco.TabIndex = 3;
             // 
             // lbEndereco
             // 
@@ -134,7 +132,7 @@
             this.txtTelefone.Mask = "(99) 00000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(127, 20);
-            this.txtTelefone.TabIndex = 2;
+            this.txtTelefone.TabIndex = 4;
             // 
             // label5
             // 
@@ -171,6 +169,7 @@
             this.txtBuscarCpf.Name = "txtBuscarCpf";
             this.txtBuscarCpf.Size = new System.Drawing.Size(141, 20);
             this.txtBuscarCpf.TabIndex = 58;
+            this.txtBuscarCpf.Visible = false;
             // 
             // rbNome
             // 
@@ -182,6 +181,7 @@
             this.rbNome.TabStop = true;
             this.rbNome.Text = "Nome";
             this.rbNome.UseVisualStyleBackColor = true;
+            this.rbNome.CheckedChanged += new System.EventHandler(this.rbNome_CheckedChanged);
             // 
             // rbCpf
             // 
@@ -193,6 +193,7 @@
             this.rbCpf.TabStop = true;
             this.rbCpf.Text = "CPF";
             this.rbCpf.UseVisualStyleBackColor = true;
+            this.rbCpf.CheckedChanged += new System.EventHandler(this.rbCpf_CheckedChanged);
             // 
             // btnNovo
             // 
@@ -207,11 +208,13 @@
             this.btnNovo.Size = new System.Drawing.Size(70, 65);
             this.btnNovo.TabIndex = 61;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.Enabled = false;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -221,11 +224,13 @@
             this.btnSalvar.Size = new System.Drawing.Size(70, 65);
             this.btnSalvar.TabIndex = 62;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnEditar
             // 
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.Enabled = false;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -240,6 +245,7 @@
             // 
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.Enabled = false;
             this.btnExcluir.FlatAppearance.BorderSize = 0;
             this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -281,6 +287,7 @@
             this.Name = "FrmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Funcionarios";
+            this.Load += new System.EventHandler(this.FrmFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

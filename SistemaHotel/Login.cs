@@ -41,16 +41,18 @@ namespace SistemaHotel
 
         private void ChamarLogin()
         {
-            if (txtUsuario.Text == "")
+            if (txtUsuario.Text.ToString().Trim() == "")
             {
                 MessageBox.Show("Preencha o Usuário");
+                txtUsuario.Text = "";
                 txtUsuario.Focus();
                 return;
             }
 
-            if (txtSenha.Text == "")
+            if (txtSenha.Text.ToString().Trim() == "")
             {
                 MessageBox.Show("Preencha a senha");
+                txtSenha.Text = "";
                 txtSenha.Focus();
                 return;
             }
