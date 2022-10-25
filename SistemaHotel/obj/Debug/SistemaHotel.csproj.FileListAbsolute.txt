@@ -11,3 +11,4 @@ D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.exe
 D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.pdb
 D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.FrmMenu.resources
 D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Cadastros.FrmFuncionarios.resources
+D:\Study\CSharp\Front-End\SistemaHotel\SistemaHotel\obj\Debug\SistemaHotel.Cadastros.frmCargo.resources

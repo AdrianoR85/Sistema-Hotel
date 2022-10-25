@@ -161,6 +161,7 @@
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid.Size = new System.Drawing.Size(621, 190);
             this.grid.TabIndex = 57;
+            this.grid.Click += new System.EventHandler(this.grid_Click);
             // 
             // txtBuscarCpf
             // 
@@ -240,6 +241,7 @@
             this.btnEditar.Size = new System.Drawing.Size(70, 65);
             this.btnEditar.TabIndex = 63;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -255,6 +257,7 @@
             this.btnExcluir.Size = new System.Drawing.Size(70, 65);
             this.btnExcluir.TabIndex = 64;
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // FrmFuncionarios
             // 

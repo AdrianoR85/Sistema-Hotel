@@ -24,6 +24,7 @@ namespace SistemaHotel.Cadastros
             txtEndereco.Enabled = true;
             cbCargo.Enabled = true;
             txtTelefone.Enabled = true;
+            txtNome.Focus();
         }
 
         private void desabilitarCampos()
@@ -71,23 +72,78 @@ namespace SistemaHotel.Cadastros
         {
             habilitarCampos();
             btnSalvar.Enabled = true;
+            btnNovo.Enabled = false;
+            btnEditar.Enabled = false;
+            btnExcluir.Enabled = false;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (txtNome.Text.ToString().Trim() == "")
             {
-                MessageBox.Show("Preencha o Nome!");
                 txtNome.Text = "";
+                MessageBox.Show("Preencha o Nome", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtNome.Focus();
                 return;
             }
 
-            if (txtCpf.Text == "   .   .   -")
+            if (txtCpf.Text == "   ,   ,   -")
             {
-                MessageBox.Show("Preencha o CPF!");
+                MessageBox.Show("Preencha o CPF", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtCpf.Focus();
                 return;
+            }
+
+            MessageBox.Show("Registro salvo com sucesso", "Dados salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnNovo.Enabled = true;
+            btnSalvar.Enabled = false;
+            limparCampos();
+            desabilitarCampos();
+        }
+
+        private void grid_Click(object sender, EventArgs e)
+        {
+            btnEditar.Enabled = true;
+            btnExcluir.Enabled = true;
+            btnSalvar.Enabled = false;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text.ToString().Trim() == "")
+            {
+                txtNome.Text = "";
+                MessageBox.Show("Preencha o Nome", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Focus();
+                return;
+            }
+
+            if (txtCpf.Text == "   ,   ,   -")
+            {
+                MessageBox.Show("Preencha o CPF", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtCpf.Focus();
+                return;
+            }
+
+            MessageBox.Show("Registro Editado com sucesso", "Dados editados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            btnNovo.Enabled = true;
+            btnEditar.Enabled = false;
+            btnExcluir.Enabled = false;
+            limparCampos();
+            desabilitarCampos();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Deseja excluir o registro?", "Excluir registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Registro excluido com sucesso", "Registro Excluidos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnNovo.Enabled = true;
+                btnEditar.Enabled = false;
+                btnExcluir.Enabled = false;
+                txtNome.Text = "";
+                txtNome.Enabled = false;
             }
         }
     }

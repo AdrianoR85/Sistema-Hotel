@@ -43,7 +43,7 @@ namespace SistemaHotel
         {
             if (txtUsuario.Text.ToString().Trim() == "")
             {
-                MessageBox.Show("Preencha o Usuário");
+                MessageBox.Show("Preencha o Usuário", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtUsuario.Text = "";
                 txtUsuario.Focus();
                 return;
@@ -51,7 +51,7 @@ namespace SistemaHotel
 
             if (txtSenha.Text.ToString().Trim() == "")
             {
-                MessageBox.Show("Preencha a senha");
+                MessageBox.Show("Preencha a Senha", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtSenha.Text = "";
                 txtSenha.Focus();
                 return;

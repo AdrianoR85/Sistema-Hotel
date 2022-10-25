@@ -38,5 +38,24 @@ namespace SistemaHotel
             Cadastros.FrmFuncionarios form = new Cadastros.FrmFuncionarios();
             form.Show();
         }
+
+        private void cargoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cadastros.frmCargo form = new Cadastros.frmCargo();
+            form.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Produtos.frmProdutos form = new Produtos.frmProdutos();
+            form.Show();
+        }
+
+        private void novoProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Produtos.frmProdutos form = new Produtos.frmProdutos();
+            form.Show();
+        }
     }
 }
